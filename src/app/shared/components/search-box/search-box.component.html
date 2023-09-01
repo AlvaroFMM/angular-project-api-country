@@ -1,0 +1,9 @@
+<!-- (keyup.enter)="emviarMensaje(txtInput.value)" -->
+<input type="text"  
+placeholder= {{placeholder}}
+class="form-control"
+#txtInput
+(keyup)="oneKeyPress(txtInput.value)"
+[value] = "initialValue"
+>
+<hr>
